@@ -764,8 +764,27 @@ animation: none;
 }
 
         @media (max-width: 767px) {
+            html,
+            body {
+                overflow-x: hidden;
+            }
+
             #castle .letter {
-                transform: scale(.48);
+                transform: scale(.62);
+            }
+
+            #theSvg {
+                position: fixed;
+                top: 50%;
+                right: auto;
+                bottom: auto;
+                left: 50%;
+                width: 140vw;
+                height: auto;
+                max-height: 75vh;
+                max-height: 75svh;
+                margin: 0;
+                transform: translate(-50%, -50%) scaleY(1.35);
             }
 
             .container {
@@ -783,6 +802,7 @@ animation: none;
             }
 
             #text-click {
+                box-sizing: border-box;
                 top: 76% !important;
                 width: 100%;
                 padding: 0 16px;
@@ -891,7 +911,7 @@ animation: none;
 
         @media (max-width: 360px) {
             #castle .letter {
-                transform: scale(.4);
+                transform: scale(.54);
             }
 
             .boxLetter .formLetter {
